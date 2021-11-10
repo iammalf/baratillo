@@ -3,8 +3,11 @@ import Image from "next/image";
 import Layout from "../../components/Layout";
 const index = () => {
   return (
-    <Layout>
-      <div className="relative bg-white overflow-hidden z-0">
+    <Layout
+      title="Baratillo Cusco Online | Sobre Nosotros"
+      description="Sobre Nosotros"
+    >
+      <div className="relative bg-white overflow-hidden">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
             <div className="sm:max-w-lg">
@@ -30,8 +33,8 @@ const index = () => {
                           <Image
                             src="/images/products/portada1.jpg"
                             alt=""
-                            width="150"
-                            height="300"
+                            width={180}
+                            height={300}
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
@@ -39,37 +42,8 @@ const index = () => {
                           <Image
                             src="/images/products/portada1.jpg"
                             alt=""
-                            width="150"
-                            height="300"
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                      </div>
-                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <Image
-                            src="/images/products/portada1.jpg"
-                            alt=""
-                            width="150"
-                            height="300"
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <Image
-                            src="/images/products/portada1.jpg"
-                            alt=""
-                            width="150"
-                            height="300"
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <Image
-                            src="/images/products/portada1.jpg"
-                            alt=""
-                            width="150"
-                            height="300"
+                            width={180}
+                            height={300}
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
@@ -79,8 +53,8 @@ const index = () => {
                           <Image
                             src="/images/products/portada1.jpg"
                             alt=""
-                            width="150"
-                            height="300"
+                            width={180}
+                            height={300}
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
@@ -88,8 +62,37 @@ const index = () => {
                           <Image
                             src="/images/products/portada1.jpg"
                             alt=""
-                            width="150"
-                            height="300"
+                            width={180}
+                            height={300}
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <Image
+                            src="/images/products/portada1.jpg"
+                            alt=""
+                            width={180}
+                            height={300}
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <Image
+                            src="/images/products/portada1.jpg"
+                            alt=""
+                            width={180}
+                            height={300}
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <Image
+                            src="/images/products/portada1.jpg"
+                            alt=""
+                            width={180}
+                            height={300}
                             className="w-full h-full object-center object-cover"
                           />
                         </div>

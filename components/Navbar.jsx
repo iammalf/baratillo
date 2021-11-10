@@ -317,7 +317,7 @@ const Navbar = () => {
             className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
           >
             <div className="border-b border-gray-200">
-              <div className="h-16 flex items-center">
+              <div className="h-24 flex items-center">
                 <button
                   type="button"
                   className="bg-white p-2 rounded-md text-gray-400 lg:hidden"
@@ -335,8 +335,8 @@ const Navbar = () => {
                       <Image
                         className="h-8 w-auto"
                         src="/images/baratillo-cusco-logo.png"
-                        width={150}
-                        height={50}
+                        width={180}
+                        height={80}
                         alt=""
                       />
                     </a>
