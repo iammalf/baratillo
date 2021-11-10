@@ -336,7 +336,7 @@ const Navbar = () => {
                         className="h-8 w-auto"
                         src="/images/baratillo-cusco-logo.png"
                         width={150}
-                        height={70}
+                        height={50}
                         alt=""
                       />
                     </a>
