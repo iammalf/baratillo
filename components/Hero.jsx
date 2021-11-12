@@ -10,8 +10,8 @@ export default function Hero() {
             </h1>
             <p className="mt-4 text-xl text-white">
               El mejor sitio web de compra y venta de artículos en general. En
-              este Baratillo Cusco podrás encontrar los mejores y últimos
-              artículos de compra y venta dentro de la cuidad del cusco.
+              este Baratillo Cusco podrás encontrar los últimos anuncios de
+              compra y venta dentro de la cuidad del cusco.
             </p>
           </div>
           <div>
