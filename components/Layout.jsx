@@ -7,6 +7,7 @@ export default function Layout({ children, title, description }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content="{description}" />
+        <link rel="icon" href="/images/logo-baratillo.ico" />
       </Head>
       <Navbar />
       <main>{children}</main>

@@ -14,8 +14,8 @@ import {
 const navigation = {
   categories: [
     {
-      id: "women",
-      name: "Women",
+      id: "ropa",
+      name: "Ropa",
       featured: [
         {
           name: "New Arrivals",
@@ -34,8 +34,8 @@ const navigation = {
       ],
       sections: [
         {
-          id: "clothing",
-          name: "Clothing",
+          id: "mujer",
+          name: "Mujer",
           items: [
             { name: "Tops", href: "#" },
             { name: "Dresses", href: "#" },
@@ -49,8 +49,8 @@ const navigation = {
           ],
         },
         {
-          id: "accessories",
-          name: "Accessories",
+          id: "hombre",
+          name: "Hombre",
           items: [
             { name: "Watches", href: "#" },
             { name: "Wallets", href: "#" },
@@ -61,8 +61,8 @@ const navigation = {
           ],
         },
         {
-          id: "brands",
-          name: "Brands",
+          id: "ninos",
+          name: "Niños",
           items: [
             { name: "Full Nelson", href: "#" },
             { name: "My Way", href: "#" },
@@ -277,9 +277,57 @@ const Navbar = () => {
                 </Tab.Group>
 
                 <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  <Link href="/departamentos">
+                    <a className="-m-2 p-2 block font-medium text-gray-900">
+                      Departamentos
+                    </a>
+                  </Link>
+                </div>
+
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  <Link href="/autos">
+                    <a className="-m-2 p-2 block font-medium text-gray-900">
+                      Autos
+                    </a>
+                  </Link>
+                </div>
+
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  <Link href="/motos">
+                    <a className="-m-2 p-2 block font-medium text-gray-900">
+                      Motos
+                    </a>
+                  </Link>
+                </div>
+
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  <Link href="/celulares">
+                    <a className="-m-2 p-2 block font-medium text-gray-900">
+                      Celulares
+                    </a>
+                  </Link>
+                </div>
+
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  <Link href="/muebles">
+                    <a className="-m-2 p-2 block font-medium text-gray-900">
+                      Muebles
+                    </a>
+                  </Link>
+                </div>
+
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
                   <Link href="/nosotros">
                     <a className="-m-2 p-2 block font-medium text-gray-900">
                       Nosotros
+                    </a>
+                  </Link>
+                </div>
+
+                <div className="border-t border-gray-200 py-6 px-4 space-y-6">
+                  <Link href="/blog">
+                    <a className="-m-2 p-2 block font-medium text-gray-900">
+                      Blog
                     </a>
                   </Link>
                 </div>
@@ -290,15 +338,7 @@ const Navbar = () => {
                       href="#"
                       className="-m-2 p-2 block font-medium text-gray-900"
                     >
-                      Sign in
-                    </a>
-                  </div>
-                  <div className="flow-root">
-                    <a
-                      href="#"
-                      className="-m-2 p-2 block font-medium text-gray-900"
-                    >
-                      Create account
+                      Login
                     </a>
                   </div>
                 </div>
@@ -309,7 +349,7 @@ const Navbar = () => {
 
         <header className="relative bg-white z-40">
           <p className="bg-indigo-600 h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
-            Get free delivery on orders over $100
+            Desea Publicar sus Productos en nuestro Sitio Web?
           </p>
 
           <nav
@@ -336,7 +376,7 @@ const Navbar = () => {
                         className="h-8 w-auto"
                         src="/images/baratillo-cusco-logo.png"
                         width={180}
-                        height={80}
+                        height={70}
                         alt=""
                       />
                     </a>
@@ -355,7 +395,7 @@ const Navbar = () => {
                                 className={classNames(
                                   open
                                     ? "border-indigo-600 text-indigo-600"
-                                    : "border-transparent text-gray-700 hover:text-gray-800",
+                                    : "border-transparent text-gray-700 hover:text-red-500",
                                   "relative z-10 flex items-center transition-colors ease-out duration-200 text-sm font-medium border-b-2 -mb-px pt-px"
                                 )}
                               >
@@ -399,7 +439,7 @@ const Navbar = () => {
                                             </div>
                                             <a
                                               href={item.href}
-                                              className="mt-6 block font-medium text-gray-900"
+                                              className="mt-6 block font-medium text-gray-900 hover:text-red-500"
                                             >
                                               <span
                                                 className="absolute z-10 inset-0"
@@ -437,7 +477,7 @@ const Navbar = () => {
                                                 >
                                                   <a
                                                     href={item.href}
-                                                    className="hover:text-gray-800"
+                                                    className="hover:text-red-500"
                                                   >
                                                     {item.name}
                                                   </a>
@@ -457,9 +497,45 @@ const Navbar = () => {
                       </Popover>
                     ))}
 
+                    <Link href="/departamentos">
+                      <a className="flex items-center text-sm font-medium text-gray-700 hover:text-red-500">
+                        Departamentos
+                      </a>
+                    </Link>
+
+                    <Link href="/autos">
+                      <a className="flex items-center text-sm font-medium text-gray-700 hover:text-red-500">
+                        Autos
+                      </a>
+                    </Link>
+
+                    <Link href="/motos">
+                      <a className="flex items-center text-sm font-medium text-gray-700 hover:text-red-500">
+                        Motos
+                      </a>
+                    </Link>
+
+                    <Link href="/celulares">
+                      <a className="flex items-center text-sm font-medium text-gray-700 hover:text-red-500">
+                        Celulares
+                      </a>
+                    </Link>
+
+                    <Link href="/muebles">
+                      <a className="flex items-center text-sm font-medium text-gray-700 hover:text-red-500">
+                        Muebles
+                      </a>
+                    </Link>
+
                     <Link href="/nosotros">
-                      <a className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">
+                      <a className="flex items-center text-sm font-medium text-gray-700 hover:text-red-500">
                         Nosotros
+                      </a>
+                    </Link>
+
+                    <Link href="/blog">
+                      <a className="flex items-center text-sm font-medium text-gray-700 hover:text-red-500">
+                        Blog
                       </a>
                     </Link>
                   </div>
@@ -469,16 +545,9 @@ const Navbar = () => {
                   <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                     <a
                       href="#"
-                      className="text-sm font-medium text-gray-700 hover:text-gray-800"
+                      className="text-sm font-medium text-gray-700 hover:text-red-500"
                     >
-                      Sign in
-                    </a>
-                    <span className="h-6 w-px bg-gray-200" aria-hidden="true" />
-                    <a
-                      href="#"
-                      className="text-sm font-medium text-gray-700 hover:text-gray-800"
-                    >
-                      Create account
+                      Login
                     </a>
                   </div>
 

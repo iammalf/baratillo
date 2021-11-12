@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 
 const products = [
   {
@@ -45,26 +45,18 @@ const products = [
 
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Baratillo Cusco Online - Página de Compra y Venta</title>
-        <meta
-          name="description"
-          content="Bienvenidos a Baratillo Cusco Online. Sitio web de compra y venta en General"
-        />
-        <link rel="icon" href="/images/logo-baratillo.ico" />
-      </Head>
-
-      <Navbar />
-
-      <div className="relative bg-white overflow-hidden">
+    <Layout
+      title="Baratillo Cusco Online - Página de Compra y Venta"
+      description="Bienvenidos a Baratillo Cusco Online. Sitio web de compra y venta en General"
+    >
+      <div className="relative bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 overflow-hidden">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
             <div className="sm:max-w-lg">
-              <h1 className="text-4xl font font-extrabold tracking-tight text-gray-900 sm:text-6xl">
+              <h1 className="text-4xl font font-extrabold tracking-tight text-white sm:text-7xl">
                 Baratillo Cusco Online
               </h1>
-              <p className="mt-4 text-xl text-gray-500">
+              <p className="mt-4 text-xl text-white">
                 El mejor sitio web de compra y venta de artículos en general.
               </p>
             </div>
@@ -84,6 +76,7 @@ export default function Home() {
                             alt=""
                             width={180}
                             height={300}
+                            layout="intrinsic"
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
@@ -93,35 +86,7 @@ export default function Home() {
                             alt=""
                             width={180}
                             height={300}
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                      </div>
-                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <Image
-                            src="/images/products/portada1.jpg"
-                            alt=""
-                            width={180}
-                            height={300}
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <Image
-                            src="/images/products/portada1.jpg"
-                            alt=""
-                            width={180}
-                            height={300}
-                            className="w-full h-full object-center object-cover"
-                          />
-                        </div>
-                        <div className="w-44 h-64 rounded-lg overflow-hidden">
-                          <Image
-                            src="/images/products/portada1.jpg"
-                            alt=""
-                            width={180}
-                            height={300}
+                            layout="intrinsic"
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
@@ -133,6 +98,7 @@ export default function Home() {
                             alt=""
                             width={180}
                             height={300}
+                            layout="intrinsic"
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
@@ -142,6 +108,39 @@ export default function Home() {
                             alt=""
                             width={180}
                             height={300}
+                            layout="intrinsic"
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <Image
+                            src="/images/products/portada1.jpg"
+                            alt=""
+                            width={180}
+                            height={300}
+                            layout="intrinsic"
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                      </div>
+                      <div className="flex-shrink-0 grid grid-cols-1 gap-y-6 lg:gap-y-8">
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <Image
+                            src="/images/products/portada1.jpg"
+                            alt=""
+                            width={180}
+                            height={300}
+                            layout="intrinsic"
+                            className="w-full h-full object-center object-cover"
+                          />
+                        </div>
+                        <div className="w-44 h-64 rounded-lg overflow-hidden">
+                          <Image
+                            src="/images/products/portada1.jpg"
+                            alt=""
+                            width={180}
+                            height={300}
+                            layout="intrinsic"
                             className="w-full h-full object-center object-cover"
                           />
                         </div>
@@ -166,16 +165,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Baratillo Cusco Autos</span>
-            <span className="block text-indigo-600">
+            <span className="block text-yellow-400">
               Compra y Venta de Vehículos.
             </span>
           </h2>
-          <p>Estas son las últimas publicaciones de Baratillo Cusco Autos.</p>
+          <p className="text-base font-semibold">
+            Estas son las últimas publicaciones de Baratillo Cusco Autos.
+          </p>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-yellow-400 hover:bg-yellow-500"
               >
                 Ver Más...
               </a>
@@ -197,11 +198,14 @@ export default function Home() {
                     alt={product.imageAlt}
                     width={350}
                     height={450}
+                    layout="intrinsic"
                     className="w-full h-full object-center object-cover group-hover:opacity-75"
                   />
                 </div>
-                <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-                <p className="mt-1 text-lg font-medium text-gray-900">
+                <h2 className="mt-4 text-gray-900 text-base font-semibold">
+                  {product.name}
+                </h2>
+                <p className="mt-1 text-2xl font-bold text-red-400">
                   {product.price}
                 </p>
               </a>
@@ -214,16 +218,18 @@ export default function Home() {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
             <span className="block">Baratillo Cusco Motos</span>
-            <span className="block text-indigo-600">
+            <span className="block text-green-400">
               Compra y Venta de Motos.
             </span>
           </h2>
-          <p>Estas son las últimas publicaciones de Baratillo Cusco Motos.</p>
+          <p className="text-base font-semibold">
+            Estas son las últimas publicaciones de Baratillo Cusco Motos.
+          </p>
           <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-400 hover:bg-green-600"
               >
                 Ver Más...
               </a>
@@ -245,11 +251,14 @@ export default function Home() {
                     alt={product.imageAlt}
                     width={350}
                     height={450}
+                    layout="intrinsic"
                     className="w-full h-full object-center object-cover group-hover:opacity-75"
                   />
                 </div>
-                <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-                <p className="mt-1 text-lg font-medium text-gray-900">
+                <h2 className="mt-4 text-gray-900 text-base font-semibold">
+                  {product.name}
+                </h2>
+                <p className="mt-1 text-2xl font-bold text-red-400">
                   {product.price}
                 </p>
               </a>
@@ -257,6 +266,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }
