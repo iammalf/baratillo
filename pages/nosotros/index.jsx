@@ -16,8 +16,14 @@ export default function index() {
                 Sobre Nosotros
               </h1>
               <p className="mt-4 text-xl text-gray-500">
-                This year, our new summer collection will shelter you from the
-                harsh elements of a world that doesnt care if you live or die.
+                Bienvenidos a Baratillo Cusco Online, somos una comunidad en
+                crecimiento, nuestra principal función es llegar a la mayor
+                cantidad de personas interesadas en los productos que se
+                publican en nuestro sitio web.
+              </p>
+              <p className="mt-4 text-xl text-gray-500">
+                Si desea publica sus productos y/o servicios póngase en contacto
+                con nosotros.
               </p>
             </div>
             <div>
