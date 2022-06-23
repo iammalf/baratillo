@@ -9,6 +9,10 @@ export default function Layout({ children, title, description }) {
         <title>{title}</title>
         <meta name="description" content="{description}" />
         <link rel="icon" href="/images/logo-baratillo.ico" />
+        <meta
+          name="google-site-verification"
+          content="5mb3KrEu60-E4xQomIlzqkT53zCiAzcqCWkp6qZbzTQ"
+        />
       </Head>
       <Navbar />
       <main>{children}</main>
